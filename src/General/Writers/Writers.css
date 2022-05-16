@@ -1,0 +1,111 @@
+.writer
+{
+    width: 400px;
+    cursor: pointer;
+    transition: all 1s;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.writer:hover
+{
+
+        transform :rotateY(180deg);
+
+}
+
+.writer .front
+{
+    width: 400px;
+    height: 390px;
+    border-radius: 15px;
+    border: 3px solid #0E1136;
+    backface-visibility: hidden !important;
+
+}
+.writer img
+{
+    width: 400px;
+    height: 390px;
+    border-radius: 15px;
+}
+
+.writer .back
+{
+    height: 400px;
+    width: 400px;
+    background-color: #0E1136;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden !important;
+}
+
+.writer .back h1
+{
+    color: #fff;
+}
+
+.writer h2
+{
+    text-align: center;
+    color: #F64081;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.writer p
+{
+    color: #fff;
+    text-align: justify;
+    padding: 0 15px;
+}
+
+.writer svg
+{
+    color: #fff;
+    font-size: 35px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.writer svg:hover
+{
+    transform: scale(1.1);
+    color: #F64081;
+}
+
+/* Responsive Style */
+@media screen and (max-width: 1000px) {
+    .writer
+    {
+        width: 350px;
+    }
+
+    .writer .front
+    {
+        width: 350px;
+        height: 350px;
+    }
+
+    .writer img
+    {
+        width: 350px;
+        height: 350px;
+    }
+    .writer .back
+    {
+        width: 350px;
+        height: 350px;
+    }
+}

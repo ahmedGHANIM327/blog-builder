@@ -1,0 +1,155 @@
+.subscription
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 35px;
+}
+
+.subscription h2
+{
+    font-size: 38px;
+    margin-block: 0;
+    color: #3557F3;
+    text-align: center;
+}
+
+.subscription h5
+{
+    color: #F64081;
+    font-size: 18px;
+    margin-block-start: 0;
+}
+
+.subscription .subscription_form
+{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.subscription .subscription_form input[type=text] , .subscription .subscription_form input[type=Email]
+{
+    background-color: rgba(14,17,54,0.05);
+    border: 0;
+    border-bottom: 2px solid rgb(14,17,54);
+    margin-bottom: 10px;
+    height: 15px;
+    padding: 15px 4px;
+    color: rgba(14,17,54,0.3);
+}
+
+.subscription .subscription_form input:focus
+{
+    border: none;
+    color: rgb(14,17,54);
+}
+
+.subscription .subscription_form input[type=submit]
+{
+    background-color: #F64081;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.bottom_bloc
+{
+    background-color: rgb(14,17,54);
+    padding: 20px 5%;
+}
+
+.bottom_bloc h6
+{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.bottom_bloc .left_bloc img
+{
+    width: 150px;
+}
+
+.bottom_bloc .left_bloc p
+{
+    color: #fff;
+    text-align: justify;
+}
+
+.bottom_bloc .right_bloc ul li
+{
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.bottom_bloc .footer_divider
+{
+    display: block;
+    background-color: #fff;
+    height: 3px;
+    width: 70%;
+    margin:20px auto;
+}
+
+.bottom_bloc .copyright
+{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Responsive Style */
+@media screen and (max-width: 1000px) {
+    .subscription h2
+    {
+        font-size: 30px;
+    }
+
+    .subscription h5
+    {
+        font-size: 14px;
+    }
+
+    .subscription .subscription_form
+    {
+        width: 85%;
+    }
+
+    .bottom_bloc h6
+    {
+        font-size: 14px;
+    }
+
+    .bottom_bloc .left_bloc
+    {
+        text-align: center;
+    }
+
+    .bottom_bloc .right_bloc
+    {
+        justify-content: flex-start;
+    }
+
+    .bottom_bloc .right_bloc ul
+    {
+        padding-inline-start: 0;
+        margin-block-start: 0;
+    }
+
+    .bottom_bloc .right_bloc ul li
+    {
+        font-size: 18px;
+    }
+
+    .bottom_bloc .copyright
+    {
+        font-size: 14px;
+    }
+}

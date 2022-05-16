@@ -1,0 +1,106 @@
+.postbloc
+{
+    background-color: #fff;
+    position: relative;
+    border-radius: 10px;
+}
+
+.postbloc .top
+{
+    background-color: #3557F3;
+    color: #fff;
+    padding: 5%;
+    font-size: 150%;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.postbloc .bottom
+{
+    padding: 1%;
+}
+
+.postbloc .bottom h6{
+    margin-block-start: 0;
+    margin-block-end: 1em;
+    color: rgba(14,17,54,0.5);
+    font-size: 12px;
+}
+
+.postbloc .bottom p
+{
+    color: #0E1136;
+    font-size: 16px;
+    margin-block-start: 0;
+    text-align: justify;
+}
+
+.postbloc .bottom .actions
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postbloc .actions ul
+{
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+}
+
+.postbloc .actions li
+{
+    background-color: rgba(53,87,243,0.6);
+    color: #fff;
+    margin-right: 2px;
+    padding: 4px 6px;
+    border-radius: 7px;
+}
+
+.postbloc .actions button
+{
+    padding: 15px 20px;
+    font-size: 0.9em;
+    background-color: #F64081;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Swiper */
+.swiper-slide .postbloc
+{
+    width: 500px;
+}
+
+/* Responsive Style */
+@media screen and (max-width: 1000px) {
+    /* Swiper */
+    .swiper-slide .postbloc
+    {
+        width: 285px !important;
+    }
+
+    .swiper-slide .postbloc .actions button
+    {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    .swiper-slide .postbloc .bottom p
+    {
+        font-size: 13px;
+    }
+
+    .swiper-slide .postbloc .actions li
+    {
+        padding: 3px 5px;
+        font-size: 10px;
+    }
+
+    .postbloc .bottom
+    {
+        padding: 2%;
+    }   
+}

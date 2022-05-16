@@ -1,0 +1,143 @@
+#head
+{
+    background : #0E1136;
+    padding-top: 200px;
+    padding-bottom: 80px;
+}
+
+/* Sections */
+.section
+{
+    padding:50px 5%;
+}
+
+/* Head Style */
+.section .bloc-image img{
+    width: 50%;
+}
+
+.section .bloc-image
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section .bloc-text
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.section .bloc-text h1
+{
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.bloc-text h1 span
+{
+    color:#F64081 ;
+}
+
+.section .bloc-text p
+{
+    color: #fff;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.social-icons
+{
+    color : #fff;
+    font-size: 18px;
+
+}
+
+.social-icons svg
+{
+    font-size: 28px;
+    margin-right: 5px;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+.social-icons svg:hover
+{
+    transform: scale(1.2);
+    color: #F64081;
+}
+/* Categories Style */
+.section h2
+{
+    font-size: 1.5em;
+    position: relative;
+    width: fit-content;
+    padding: 0 0 20px 0;
+    color: #0E1136;
+}
+
+.section h2::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 4px;
+    background-color: #0E1136;
+}
+
+/* Posts */
+#posts
+{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background-color: #0E1136;
+    border-radius: 20px;
+}
+
+#posts .section
+{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 25px;
+}
+
+#posts .title
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#posts .title button
+{
+    padding: 15px 20px;
+    font-size: 1.1em;
+    background-color: #F64081;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#posts .section > .title h2 
+{
+    color: #fff;
+}
+
+#posts .section > .title h2::after
+{
+    background-color: #fff;
+}
+
+/* Responsive Style */
+@media screen and (max-width: 1000px) {
+    #head
+    {
+        padding-top: 160px;
+    }
+}
