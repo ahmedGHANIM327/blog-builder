@@ -2,6 +2,7 @@ import React ,{useState, useEffect} from 'react'
 import logo from '../../Assets/logo.png'
 import './Navbar.css'
 import MenuIcon from '@mui/icons-material/Menu';
+import {NavLink} from 'react-router-dom'
 
 export default function Navbar() {
 
@@ -44,11 +45,11 @@ export default function Navbar() {
         {(toggleMenu || largeur>1000) && (
         <div className="navigation">
           <ul>
-              <li>HOME</li>
-              <li>BLOG</li>
-              <li>CATEGORIES</li>
+              <li><NavLink to="/" className={({isActive}) => { return isActive ? "activLink" : ""}}>HOME</NavLink></li>
+              <li><NavLink to="/blog" className={({isActive}) => { return isActive ? "activLink" : ""}}>BLOG</NavLink></li>
+              <li><NavLink to="/contact" className={({isActive}) => { return isActive ? "activLink" : ""}}>CONTACT</NavLink></li>
           </ul>
-          <button>Connexion</button>
+          <button ><NavLink to="/auth">Connexion</NavLink></button>
         </div>
         )}
         <MenuIcon className='toggle' onClick={toggleNav}/>

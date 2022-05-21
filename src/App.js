@@ -1,10 +1,21 @@
 import './App.css';
 import Home from './Home/Home';
+import Blog from './Blog/Blog'
+import Contact from './Contact/Contact'
+import Auth from './Authentification/Authentification'
+import {BrowserRouter as Router , Routes , Route} from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Router>
+          <Routes>
+              <Route path='/' exact={true} element={<Home/>}/>
+              <Route path='/blog' exact={true} element={<Blog/>}/>
+              <Route path='/contact' exact={true} element={<Contact/>}/>
+              <Route path='/auth' exact={true} element={<Auth />}/>
+          </Routes>
+      </Router>
     </div>
   );
 }
