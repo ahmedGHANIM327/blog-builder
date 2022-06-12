@@ -3,6 +3,7 @@
     background-color: #fff;
     position: relative;
     border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(14,17,54,0.2);
 }
 
 .postbloc .top

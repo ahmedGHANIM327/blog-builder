@@ -1,0 +1,73 @@
+#blog-head
+{
+    background : #0E1136;
+    padding-top: 220px;
+    padding-bottom: 180px;
+}
+
+#blog-head .bloc-text
+{
+    display: flex;
+    align-items: center;
+}
+
+#blog-head .bloc-text p , #blog-head .bloc-text h1
+{
+    text-align: center;
+}
+
+.blog-posts .top
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-posts .top .form-select
+{
+    width: 220px;
+}
+
+.blog-posts .posts 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blog-posts .posts .postbloc
+{
+    width: 450px !important;
+    margin-bottom: 25px;
+}
+
+.blog-posts .pagination
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.pagination li button.Mui-selected
+{
+    background-color: #0E1136;
+    color: #fff;
+}
+
+/* Responsive Style */
+@media screen and (max-width: 1000px) {
+    #blog-head
+    {
+        padding-top: 150px;
+    padding-bottom: 110px;
+    }
+    .blog-posts .posts .postbloc
+    {
+        width: 100% !important;
+    }
+
+    #blog-head .bloc-text p
+    {
+        text-align: justify;
+    }
+}

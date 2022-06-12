@@ -46,7 +46,7 @@
 .section .bloc-text p
 {
     color: #fff;
-    font-size: 14px;
+    font-size: 18px;
     text-align: justify;
 }
 
@@ -139,5 +139,9 @@
     #head
     {
         padding-top: 160px;
+    }
+    .section .bloc-text p
+    {
+        font-size: 15px;
     }
 }
