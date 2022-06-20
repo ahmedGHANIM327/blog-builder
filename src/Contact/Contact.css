@@ -1,3 +1,4 @@
+/* Styles for entire bloc contact */
 .bloc_contact
 {
     margin: 50px;
@@ -6,6 +7,7 @@
     padding: 15px;
 }
 
+/* Styles for the left bloc */
 .bloc_contact .bloc_left
 {
     color: #fff;
@@ -21,4 +23,115 @@
 .bloc_contact .bloc_left ul li
 {
     margin: 5px 0 10px;
+    font-size: 20px;
+    display: flex;
 }
+
+.bloc_contact .bloc_left li a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.bloc_contact .bloc_left li svg
+{
+    margin-right: 5px;
+    font-size: 32px !important;
+    
+}
+
+/* Hover Effect */
+.bloc_contact .bloc_left a:hover
+{
+    color: #F64081;
+    transform: scale(1.05);
+}
+
+.bloc_contact .bloc_left .social-media a:hover
+{
+    color: #F64081;
+    transform: scale(1.2);
+}
+
+/* Syules for the right bloc */
+.bloc_contact .bloc_right
+{
+    background-color: rgba(256, 256, 256, 0.3);
+    border-radius: 20px;
+    padding: 30px 15px;
+}
+
+/* Form Styles */
+.form-contact .name , .form-contact .email
+{
+    width: 45%;
+    margin: 18px 2.5%;
+}
+
+.form-contact .subject , .form-contact .message
+{
+    width: 95%;
+    margin: 18px 2.5%;
+}
+
+.form-contact .input label
+{
+    color: #F64081;
+}
+
+#standard-name , #standard-email, #standard-select-subject , #standard-multiline-message
+{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#standard-name:focus , #standard-email:focus , #standard-select-subject:focus , #standard-multiline-message:focus
+{
+    color: #fff;
+}
+
+.MuiInputBase-formControl::before
+{
+    border-bottom:1px solid #F64081 !important;
+}
+
+.MuiInputBase-formControl::after
+{
+    border-bottom:2px solid #fff !important;
+}
+
+
+.form-contact .input svg
+{
+    color: #F64081;
+}
+
+/* action send button*/
+.action-send
+{
+    margin-top: 15px;
+    padding: 10px 2.5%;
+    float: right;
+}
+
+.action-send button
+{
+    border: #F64081 1px solid;
+    font-size: 20px;
+    padding: 15px 25px;
+    display: flex;
+    background-color: #F64081;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.action-send button svg
+{
+    margin-left: 10px;
+}
+
+
