@@ -11,7 +11,8 @@ import EmailIcon from '@mui/icons-material/Email';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
-
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function Contact() {
 
@@ -35,6 +36,13 @@ export default function Contact() {
 
   const handleChangeMessage = (event) => {
     setMessage(event.target.value);
+  }
+
+  //handle Send Message
+  const handleSendMessage = () => {
+    console.log("Name :"+name+"/n");
+    console.log("Email :"+email+"/n");
+    console.log("Message :"+message+"/n");
   }
 
   return (
@@ -64,10 +72,11 @@ export default function Contact() {
                   <ul>
                     <li><a href="#"><LocalPhoneIcon />+33674311624</a></li>
                     <li><a href="#"><EmailIcon />contact@ahmed-ghanim.com</a></li>
-                    <li>Toulouse , France</li>
+                    <li><a href="#"><LocationOnIcon />Toulouse , France</a></li>
                     <li className='social-media'>
                       <a href="#"><InstagramIcon /></a>
                       <a href="#"><FacebookIcon /></a>
+                      <a href="#"><GitHubIcon /></a>
                     </li>
                   </ul>
                 </Grid>
@@ -77,31 +86,34 @@ export default function Contact() {
                                     label="Name"
                                     required
                                     variant="standard"
-                                    onClick={handleChangeName}
+                                    onChange={handleChangeName}
                                     className='input name'
+                                    value={name}
                                 />
                                 <TextField
                                     id="standard-email"
                                     label="Email"
                                     required
-                                    onClick={handleChangeEmail}
+                                    onChange={handleChangeEmail}
                                     type="email"
                                     variant="standard"
                                     className='input email'
+                                    value={email}
                                 />
 
                                 <TextField
                                 id="standard-multiline-message"
                                 label="Message"
                                 multiline
-                                onClick={handleChangeMessage}
+                                onChange={handleChangeMessage}
                                 rows={4}
                                 variant="standard"
                                 className='input message'
+                                value={message}
                                 />
 
                                 <div className="action-send">
-                                    <button>Send <SendIcon /></button>
+                                    <button onClick={handleSendMessage}>Send <SendIcon /></button>
                                 </div>
                 </Grid>
               </Grid>

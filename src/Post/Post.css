@@ -1,0 +1,59 @@
+#post-head
+{
+    background : #0E1136;
+    padding-top: 220px;
+    padding-bottom: 180px;
+}
+
+#post-head .bloc-text
+{
+    display: flex;
+    align-items: center;
+}
+
+#post-head .bloc-text h1
+{
+    font-weight: bold;
+}
+
+#post-head .bloc-text h6
+{
+    font-size: 18px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    color: rgba(255,255,255,0.5);
+}
+
+/* Side Nav Bar */
+
+
+/* Post Section */
+.section_post h1 {
+    margin-block-end: 0;
+}
+
+.section_post p {
+    margin-block-start: 5px;
+}
+
+
+/* Responsive Style */
+@media screen and (max-width: 1000px) {
+    #post-head
+    {
+        padding-top: 180px;
+        padding-bottom: 120px;
+    }
+    
+    #post-head .bloc-text h1
+    {
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    #post-head .bloc-text h6
+    {
+        text-align: center;
+        font-size: 13px;
+    }
+}

@@ -1,7 +1,15 @@
 import React from 'react'
 import './Posts.css'
+import { useNavigate } from "react-router-dom";
+
 
 export default function PostBloc() {
+
+    let navigate = useNavigate();
+    const openPost = () => {
+        navigate("/post");
+    };
+    
   return (
     <div className="postbloc">
         <div className="top">
@@ -32,7 +40,7 @@ export default function PostBloc() {
                         <li>CSS</li>
                     </ul>
                 </div>
-                <button>Read More</button>
+                <button onClick={openPost}>Read More</button>
             </div>
         </div>
     </div>

@@ -11,15 +11,27 @@ import Footer from '../General/Footer/Footer';
 
 export default function Blog() {
 
+  //Set Category filter
   const [categorie , setCategorie] = useState('ALL');
   const handleCategories = (e) => {
     setCategorie(e.target.value);
   }
 
+  // Set current Page
   const [page, setPage] = useState(1);
   const handlePages = (event, value) => {
     setPage(value);
   };
+
+  //Display Posts
+  const posts = []
+  function display_posts()
+  {
+    for(let i=0;i<15;i++)
+    {
+      posts.push(<PostBloc />)
+    }
+  }
 
   return (
     <div id="Blog">
@@ -28,16 +40,16 @@ export default function Blog() {
         </div>
         <div id='blog-head' className="section bloc-text">
           <div className="bloc-text">
-          <h1>Welcome to <span className='blog-span'>The world of Tech</span></h1>
-          <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. 
-              Vestibulum ante ipsum primis in faucibus. Quisque velit nisi,
-              pretium ut lacinia in, elementum id enim.Quisque velit nisi, 
-              pretium ut lacinia in, elementum id enim. 
-              Vestibulum ante ipsum primis in faucibus. Quisque velit nisi,
-              pretium ut lacinia in, elementum id enim.Quisque velit nisi, 
-              pretium ut lacinia in, elementum id enim. 
-              Vestibulum ante ipsum primis in faucibus. Quisque velit nisi,
-              pretium ut lacinia in, elementum id enim.</p>
+            <h1>Welcome to <span className='blog-span'>The world of Tech</span></h1>
+            <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. 
+                Vestibulum ante ipsum primis in faucibus. Quisque velit nisi,
+                pretium ut lacinia in, elementum id enim.Quisque velit nisi, 
+                pretium ut lacinia in, elementum id enim. 
+                Vestibulum ante ipsum primis in faucibus. Quisque velit nisi,
+                pretium ut lacinia in, elementum id enim.Quisque velit nisi, 
+                pretium ut lacinia in, elementum id enim. 
+                Vestibulum ante ipsum primis in faucibus. Quisque velit nisi,
+                pretium ut lacinia in, elementum id enim.</p>
           </div>
         </div>
 
@@ -62,6 +74,15 @@ export default function Blog() {
             </div>
           </div>
           <div className="posts">
+            <PostBloc />
+            <PostBloc />
+            <PostBloc />
+            <PostBloc />
+            <PostBloc />
+            <PostBloc />
+            <PostBloc />
+            <PostBloc />
+            <PostBloc />
             <PostBloc />
             <PostBloc />
             <PostBloc />

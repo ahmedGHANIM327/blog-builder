@@ -22,7 +22,7 @@
 
 .bloc_contact .bloc_left ul li
 {
-    margin: 5px 0 10px;
+    margin: 5px 0 20px;
     font-size: 20px;
     display: flex;
 }
@@ -134,4 +134,28 @@
     margin-left: 10px;
 }
 
+#contact #categories.section
+{
+    padding: 0 5% 50px !important;
+}
 
+/* Responsive Style */
+@media screen and (max-width: 1000px) {
+    .bloc_contact .bloc_left ul li 
+    {
+        font-size: 18px;
+    }
+
+    .bloc_contact .bloc_left ul li svg
+    {
+        font-size: 26px !important;
+    }
+
+    .form-contact .name , .form-contact .email , .form-contact .message
+    {
+        width: 95%;
+        margin: 12px 2%;
+    }
+
+
+}
