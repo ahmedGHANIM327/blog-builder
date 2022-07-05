@@ -3,16 +3,31 @@ import './Footer.css'
 import logo from '../../Assets/logo.png'
 import { Grid } from '@mui/material';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import { useState } from 'react';
 
 export default function Footer() {
+
+    // name subscruption
+    const [name , setName] = useState("");
+
+    const handleNameChange = (event) => {
+        setName(event.target.value)
+    }
+
+    //Email subscruption
+    const [email , setEmail] = useState("");
+    const handleEmailChange = (event) => {
+        setEmail(event.target.value)
+    }
+
   return (
     <div className="footer">
         <div className="subscription">
         <h2>Finding this site helpful?</h2>
         <h5>There’s more coming for our subscribers!</h5>
-        <form action="" className='subscription_form'>
-            <input type="text" placeholder='Name'/>
-            <input type="email" name="email" id="email" placeholder='Email'/>
+        <form action="submit" className='subscription_form'>
+            <input type="text" placeholder='Name' onChange={handleNameChange}/>
+            <input type="email" name="email" id="email" placeholder='Email' onChange={handleEmailChange}/>
             <input type="submit" value="Subscribe" />
         </form>   
         </div>

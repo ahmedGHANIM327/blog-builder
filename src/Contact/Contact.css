@@ -13,71 +13,94 @@
     color: #fff;
 }
 
-.bloc_contact .bloc_left ul
+/*Social contact */
+.social-contact ul
 {
     list-style: none;
-    margin-inline-start: 0;
     padding-inline-start: 0;
 }
 
-.bloc_contact .bloc_left ul li
+.social-contact ul li
 {
-    margin: 5px 0 20px;
-    font-size: 20px;
-    display: flex;
+    margin: 20px 0;
+    width: fit-content;
 }
 
-.bloc_contact .bloc_left li a{
-    text-decoration: none;
-    color: #fff;
+.social-contact ul li a
+{
     display: flex;
-    justify-content: center;
     align-items: center;
-    transition: all 0.5s;
+    justify-content: flex-start;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 1s;
+    text-decoration: none;
 }
 
-.bloc_contact .bloc_left li svg
-{
-    margin-right: 5px;
-    font-size: 32px !important;
-    
-}
-
-/* Hover Effect */
-.bloc_contact .bloc_left a:hover
+.social-contact ul li a:hover
 {
     color: #F64081;
-    transform: scale(1.05);
 }
 
-.bloc_contact .bloc_left .social-media a:hover
+.social-contact ul li svg
 {
+    margin-right: 12px;
     color: #F64081;
-    transform: scale(1.2);
+    background-color: rgba(246,64,129,0.08);
+    border: #F64081 1px solid;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 1s;
 }
 
-/* Syules for the right bloc */
+.social-contact ul li a:hover svg
+{
+    color: #fff;
+    background-color: #F64081;
+}
+
+/* Styles for the right bloc */
 .bloc_contact .bloc_right
 {
-    background-color: rgba(256, 256, 256, 0.3);
+    background-color: rgba(256, 256, 256, 0.1);
     border-radius: 20px;
     padding: 30px 15px;
 }
 
 /* Form Styles */
-.form-contact .name , .form-contact .email
+.form-contact form
 {
-    width: 45%;
-    margin: 18px 2.5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.form-contact .subject , .form-contact .message
+.form-contact .name ,.form-contact  .email ,.form-contact .message
+{
+    width: 100%;
+}
+.form-contact .input1 
+{
+    width: 45%;
+    margin: 18px 2.5% 0;
+}
+
+.form-contact .input1 p ,.form-contact .input2 p
+{
+    color: red;
+    height: 15px;
+}
+
+.form-contact .input2
 {
     width: 95%;
     margin: 18px 2.5%;
 }
 
-.form-contact .input label
+.form-contact .input1 label,.form-contact .input2 label
 {
     color: #F64081;
 }
@@ -111,9 +134,10 @@
 /* action send button*/
 .action-send
 {
-    margin-top: 15px;
+    width: 100%;
     padding: 10px 2.5%;
-    float: right;
+    display: flex;
+    justify-content: end;
 }
 
 .action-send button
@@ -139,6 +163,22 @@
     padding: 0 5% 50px !important;
 }
 
+.form-contact .message-success
+{
+    color: #4bb543;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-contact .message-success svg
+{
+    margin-right: 10px;
+
+}
+
 /* Responsive Style */
 @media screen and (max-width: 1000px) {
     .bloc_contact .bloc_left ul li 
@@ -151,10 +191,15 @@
         font-size: 26px !important;
     }
 
-    .form-contact .name , .form-contact .email , .form-contact .message
+    .bloc_contact>.bloc_left
+    {
+        margin-bottom: 16px !important;
+    }
+
+    .form-contact .input1 , .form-contact .input2
     {
         width: 95%;
-        margin: 12px 2%;
+        margin: 0 2%;
     }
 
 

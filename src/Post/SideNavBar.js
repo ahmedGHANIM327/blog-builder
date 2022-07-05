@@ -1,7 +1,12 @@
 import React from 'react'
-
+import LatestPosts from '../General/Posts/LatestPosts'
+import Categories from '../General/Categories/Categories'
+import './Post.css'
 export default function SideNavBar() {
   return (
-    <h1>Sidenavbar</h1>
+    <div id="sidebar">
+      <LatestPosts />
+      <Categories />
+    </div>
   )
 }

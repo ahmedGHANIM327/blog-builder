@@ -12,7 +12,7 @@ export default function PostBloc() {
     
   return (
     <div className="postbloc">
-        <div className="top">
+        <div className=" top">
             <h4>
             Fullscreen Overlay Navigation Menu Bar using only HTML & CSS
             </h4>
